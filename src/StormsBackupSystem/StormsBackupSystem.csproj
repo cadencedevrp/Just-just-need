@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>StormsBackupSystem</AssemblyName>
+    <RootNamespace>StormsBackupSystem</RootNamespace>
+    <ApplicationIcon>Assets\storm.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <Product>Storms Technologies Backup System</Product>
+    <AssemblyTitle>Storms Technologies Backup System</AssemblyTitle>
+    <Company>Storms Technologies</Company>
+    <Copyright>Copyright © Storms Technologies</Copyright>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.77.0.4301" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\storm.ico" LogicalName="StormsBackupSystem.storm.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="StormsBackupSystem.Tests" />
+  </ItemGroup>
+
+</Project>
